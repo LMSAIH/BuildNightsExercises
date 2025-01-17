@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <script src="todolist.js"></script>
+    <link rel="stylesheet" href="todolist.css" />
+  </head>
+  <body>
+
+    <h1>Welcome to my To-Do List!</h1>
+
+    <div class="listContainer">
+        <form onsubmit="addTask(event)">
+            <input type="text" placeholder="Enter the task here..." id = "taskName">
+            <input type="submit" value="Add task" class="submitButton">
+        </form>
+        <div class="taskList">
+            <p class="taskHeader"> Your tasks: </p>
+            <ul class="tasks">
+            </ul>
+        </div>
+        <div class="error" style="display: none;">
+            <p class="errorText"></p>
+        </div>
+    </div>
+
+  </body>
+</html>
