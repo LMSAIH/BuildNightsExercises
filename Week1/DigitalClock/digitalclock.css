@@ -1,0 +1,35 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clockContainer{
+    padding:0.3rem 0;
+    width:fit-content;
+    margin: auto;
+    border: solid 2px;
+    border-radius: 0.2rem;
+    background-color: silver;
+    
+}
+
+.time{
+    font-size:xx-large;
+    border: solid;
+    padding:1rem 3rem 1rem 3rem;
+    border-left:none;
+    border-right:none;
+    border-radius:0.3rem;
+    background-color: greenyellow;
+}
+
+.time>span{
+    border:solid;
+    padding:0.1rem;
+    border-radius: 0.3rem;
+    margin-left:0.2rem;
+}
