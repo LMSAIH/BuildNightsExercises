@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+canvas{
+    border: solid;
+    border-radius:1rem;
+}
+
+.canvasContainer{
+    width: fit-content;
+    margin: auto;
+}
