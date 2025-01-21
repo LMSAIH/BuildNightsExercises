@@ -1,5 +1,7 @@
 @Author: Axel Gael Velasquez Castaneda
 
+If reading on github, please open it on raw, or download it and view it on your vscode.
+
 Step by step guide to create this amazing little project!
 
 Hello and welcome, dear build nights attender, I hope this is to your liking, and you are able to learn something from this. Here we will cover some of the major topics on HTML/CSS/JS, all in a simple, yet compelling project. Without further do: 
