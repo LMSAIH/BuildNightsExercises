@@ -34,14 +34,14 @@ todolist.js (for adding functionality to your to-do list).
 
 6. Add a page title to the body:
 
-Inside the <body> section, at the very top, add an <h1> tag.
+Inside the <body> section, at the very top, add an <h1></h1> tag.
 This will serve as your page title. For example:
 <h1>Welcome to my To-Do List!</h1>.
-Note: <h1> is the largest heading. If you want smaller headings, you can use <h2> to <h6>. Only one <h1> should be used per page.
+Note: h1 is the largest heading. If you want smaller headings, you can use h2 to h6. Only one h1 should be used per page.
 
 7. Create a container for your to-do list:
 
-Add a <div> element below the <h1> tag.
+Add a <div> element below the h1 tag.
 A <div> is a structural element used to group or organize content on a webpage. It doesn’t have built-in functionality but serves as a container.
 Assign the class="listContainer" attribute to this <div> for styling purposes.
 
