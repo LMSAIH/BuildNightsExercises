@@ -10,24 +10,31 @@ Hello and welcome, dear build nights attender, I hope this is to your liking, an
 
 We will not cover the theory of HTML here, only its practical functionalities and how you can use them to create amazing things.
 
-1. Open Visual Studio Code (or your preferred code editor) and create a new folder. You can name the folder anything you'd like. Inside this folder, create a new HTML file named todolist.html. In this file, type ! and press Enter (quickly if you're using VS Code). This will automatically generate an HTML skeleton for you.
+1. Open Visual Studio Code (or your preferred code editor) and create a new folder. You can name the folder anything you'd like. Inside this folder, 
+create a new HTML file named todolist.html. In this file, type ! and press Enter (quickly if you're using VS Code). This is a shortcut that will automatically
+generate an HTML skeleton for you. The basic HTML skeleton is the set of tags required of every HTML web page you build.
 
-2. Once the HTML skeleton is created, locate the <title> tag in the <head> section and change its content to your desired page title. For example:
+2. Once the HTML skeleton is created, locate the <title> tag in the <head> section and change its content
+to your desired page title. For example:
 <title>To-Do List</title>.
 
 3. Link your JavaScript file:
 
-Just below the <title> tag, add a <script> tag.
+Just below the <title> tag, create a <script> tag.
 Inside the <script> tag, use the src attribute to link the JavaScript file, like so:
 <script src="todolist.js"></script>.
 The src attribute connects your HTML (visual elements) to the functionality defined in the JavaScript file.
+Javascript files help you to specify new functionalities and features for your webpage that can't be directly added using HTML. 
+An attribute is a keyword within an element that can adjust its behaviour.
 
 4. Link your CSS file:
 
-Right below the <script> tag, add a <link> tag to connect the CSS stylesheet.
+Right below the <script> tag, create a <link> tag to connect the CSS stylesheet.
 The <link> tag should include the rel and href attributes, like this:
 <link rel="stylesheet" href="todolist.css"/>.
 This will apply the styles defined in your CSS file to the HTML structure.
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
 
 5.In the same folder, create two additional files:
 
@@ -36,35 +43,39 @@ todolist.js (for adding functionality to your to-do list).
 
 6. Add a page title to the body:
 
-Inside the <body> section, at the very top, add an <h1></h1> tag.
+Inside the <body> section, at the very top, just below your <body> tag, create a <h1></h1> tag.
 This will serve as your page title. For example:
 <h1>Welcome to my To-Do List!</h1>.
-Note: h1 is the largest heading. If you want smaller headings, you can use h2 to h6. Only one h1 should be used per page.
+Note: h1 is the largest heading. If you want smaller headings, you can use h2 to h6. Only one h1 should be used per page, 
+as it indicates that this is your main title.
 
 7. Create a container for your to-do list:
 
 Add a <div> element below the h1 tag.
 A <div> is a structural element used to group or organize content on a webpage. It doesn’t have built-in functionality but serves as a container.
-Assign the class="listContainer" attribute to this <div> for styling purposes.
+Assign the class="listContainer" attribute to this <div> for styling purposes. Class is an attribute that every element has,
+it provides a unique identifier to the element, so that it can be "selected" by other functions on our program.
 
 
 8. Add a form for user input:
 
-Inside the listContainer <div>, add a <form> element.
+Inside the listContainer <div>, create a <form> element.
 Assign the onsubmit="addTask(event)" attribute to the <form> tag.
 The onsubmit attribute will trigger a JavaScript function (addTask) when the form is submitted.
+This will be viewed in the coming steps. If the form is generated with any attributes once you create it,
+please delete all of them. You only need onsubmit for this specific exercise.
 
 9. Create input elements inside the form:
 
 Inside the <form>:
-Add the first <input> element:
-Use type="text" to specify that this is a text input field.
-Add placeholder="Enter the task here..." to display a hint before the user types.
-Add id="taskName" to uniquely identify the input element for JavaScript.
-Add the second <input> element:
-Use type="submit" to make it a submit button.
-Add class="submitButton" for styling.
-Add value="Add task" to display the text "Add task" on the button.
+Right after the form tag, create the first <input> element:
+Use the attribute type="text" to specify that this is a text input field.
+Add the attribute placeholder="Enter the task here..." to display a hint before the user types.
+Add the attribute identifier id="taskName" to uniquely identify the input element for JavaScript.
+Add the second <input> element right after the first input element:
+Use the attribute type="submit" to make it a submit button.
+Add the attribute class="submitButton" for styling.
+Add the attribute value="Add task" to display the text "Add task" on the button.
 
 
 10. Add a section for the task list:
@@ -202,5 +213,5 @@ Allows tasks to be removed when clicked.
 
 Challenges:
 
--- Add css to make it look good --
+-- Add css on the todolist.css file to make it look good. --
 -- Make it so the list has a trash icon and is deleted when the trash icon is clicked -- 
