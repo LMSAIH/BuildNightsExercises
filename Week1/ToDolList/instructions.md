@@ -1,6 +1,6 @@
 @Author: Axel Gael Velasquez Castaneda
 
-If reading on github, please open it on raw, or download it and view it on your vscode.
+If reading on github, please open it on raw, or download it and view it on your code editor.
 
 Step by step guide to create this amazing little project!
 
